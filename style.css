@@ -10,3 +10,7 @@ just an idea if Y'all like it
 /* CSS syntax notes:
     selector {property: value;}
 */
+
+header {
+    font-size: 100%;
+}
