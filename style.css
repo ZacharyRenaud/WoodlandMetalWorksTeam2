@@ -10,7 +10,10 @@ tertiary color: #CDBE78
     selector {property: value;}
 */
 
-/* I like the font but should we not use the logo in the top nav bar of the website? */
+/* I like the font but should we not use the logo in the top nav bar of the website? 
+BB - Yes we should use the logo at the top. I put that as a placeholder. In Index.html, I added a new section
+called "Product Gallary", I image this area to cycle through photos of WMW products. This will require 
+JavaScript, I pasted the W3Schools code in there for now; don't know how it works quite yet.*/
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
 
 html {
@@ -37,11 +40,36 @@ body {
 /* I personally wanted to make the nav bar centered. Idk if you want to make what you had in the 
 header smaller and to the left, adding the nav bar links into the header section(I can draw this
 out in block 3, I have study hall and I'm literally across from you in Mrs. kelly's room. 
-And searchbar do we want that? I feel like it would make us stand out.*/ 
+And searchbar do we want that? I feel like it would make us stand out.
+
+BB: Yes the way you put the navbar is good. The way I did it was only a placeholder. 
+
+I added a search bar to navbar section (placeholder). Added various things to the navbar like changing the 
+text-decoation, having the links change color when the user hovers over them, and having the 
+link be highlighted when you are in the page you selected.*/ 
+
+.toolbar a:hover
+{
+    background-color: #CDBE78;
+    color: black;
+}
+
+.toolbar {
+    font-size: 1.5rem;
+}
+
+.toolbar a {
+    text-decoration: none;
+}
+
+.toolbar a:active {
+    background-color: #CDBE78;
+    color: white;
+} 
 
 ul {
   list-style-type: none;
-  padding: 0.4rem;
+  padding: 0.8rem;
   overflow: hidden;
   background-color: #383838;
   width:750px;
@@ -53,5 +81,12 @@ li a {
     color: #ffffff;
     text-align:center;
     width:150px; 
+    height: 25px;
     float:left;
+}
+
+input {
+    color: #ffffff;
+    width: 135px;
+    float: right;
 }
