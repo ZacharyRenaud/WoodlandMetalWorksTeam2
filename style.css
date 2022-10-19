@@ -6,14 +6,16 @@ secondary color: #CDBE78
 tertiary color: #CDBE78
 */
 
-/* CSS syntax notes:
-    selector {property: value;}
-*/
-
 /* I like the font but should we not use the logo in the top nav bar of the website? 
 BB - Yes we should use the logo at the top. I put that as a placeholder. In Index.html, I added a new section
 called "Product Gallary", I image this area to cycle through photos of WMW products. This will require 
 JavaScript, I pasted the W3Schools code in there for now; don't know how it works quite yet.*/
+
+/*Can we make the gold strip smaller, like a lot smaller. Also were going to get more images soon
+and an email and phone number from WMW. Also just comment above the font from now on for end of sessi
+-on comments. Unless obviously you want to comment specifically about a property or something.
+Nice work with the image turntable, continue with that.*/
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
 
 html {
@@ -24,16 +26,25 @@ header {
     font-size: 3rem;
     text-align: center;
     background-color: #CDBE78;
-    padding: 1rem;
+    padding: 0.02rem;
+    margin-top: 0;
     letter-spacing: 0.6rem;
-    line-height: .8rem;
+    line-height: .1rem;
+    content: 5rem;
+    
+}
+
+
+h1 img {
+    width: 26rem;
+    height: auto;
     
 }
 
 body {
     font-family: 'EB Garamond', serif;
     background-color: #F2F2F2;
-    color: #383838;
+    color: white;
     margin: 0;
 }
 
@@ -80,8 +91,8 @@ ul {
 li a {
     color: #ffffff;
     text-align:center;
-    width:150px; 
-    height: 25px;
+    width: 150px; 
+    height: 1.6rem;
     float:left;
 }
 
