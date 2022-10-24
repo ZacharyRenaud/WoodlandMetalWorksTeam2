@@ -15,6 +15,11 @@ I spent a lot of my time making the WMW logo have a transparent background. Did 
 prefer it over the white background. It's up to you. I decreased the size of the gold strip, I am not sure
 if it is as small as you would like. Further researched for the image carousel slide show thingy.*/
 
+/*I like the size of the bar and the transperent logo. I made the nav bar flex, again can
+you make the gold bar small, I don't know why I can't figure that out sorry. I added structure to 
+a couple other files, added the requested mission and vision statements, added a image hover effect
+and just thre an image on the home page for refrence.*/
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
 
 html {
@@ -25,11 +30,10 @@ header {
     font-size: 1.5rem;
     text-align: center;
     background-color: #CDBE78;
-    padding: 0.02rem;
+    padding: 0.3rem;
     margin-top: 0;
     letter-spacing: 0.6rem;
     line-height: .1rem;
-    content: 5rem;
     
 }
 
@@ -38,6 +42,18 @@ h1 img {
     width: 32rem;
     height: auto;
     
+}
+
+body h1 {
+    color:#383838;
+}
+
+body h2 {
+    color:#383838;
+}
+
+body h3 {
+    color:#383838;
 }
 
 body {
@@ -69,20 +85,21 @@ body {
 
 ul {
   list-style-type: none;
-  padding: 0.8rem;
+  padding: .5rem;
   overflow: hidden;
   background-color: #383838;
-  width:750px;
-  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style:none;
 }
 
 li a {
     color: #ffffff;
     text-align:center;
-    width: 150px; 
+    width: 2rem; 
     height: 1.6rem;
-    float:left;
+    float:none;
 }
 
 input {
@@ -90,3 +107,16 @@ input {
     width: 135px;
     float: right;
 }
+
+body img{
+    width: 20rem;
+    height: auto;
+}
+
+ body img:hover {
+    width: 29rem;
+    height: auto;
+    transition: .5s ease;
+} 
+
+/*I think we should make images bigger if you hover over them. BLIND PEOPLE WOULD LIKE THIS.*/
