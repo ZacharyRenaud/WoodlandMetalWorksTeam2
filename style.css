@@ -6,19 +6,14 @@ secondary color: #CDBE78
 tertiary color: #CDBE78
 */
 
-/*Can we make the gold strip smaller, like a lot smaller. Also were going to get more images soon
-and an email and phone number from WMW. Also just comment above the font from now on for end of sessi
--on comments. Unless obviously you want to comment specifically about a property or something.
-Nice work with the image turntable, continue with that.
-
-I spent a lot of my time making the WMW logo have a transparent background. Did not come out perfect but I
-prefer it over the white background. It's up to you. I decreased the size of the gold strip, I am not sure
-if it is as small as you would like. Further researched for the image carousel slide show thingy.*/
-
 /*I like the size of the bar and the transperent logo. I made the nav bar flex, again can
 you make the gold bar small, I don't know why I can't figure that out sorry. I added structure to 
 a couple other files, added the requested mission and vision statements, added a image hover effect
-and just thre an image on the home page for refrence.*/
+and just thre an image on the home page for refrence.
+
+I worked on the image carousel thing... still not working how I want it to. I further reduced the size of 
+the top gold bar, but there is a white bar at the top for no apparent reason. I tried to get rid of it
+but could not figure out how. */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
 
@@ -30,10 +25,11 @@ header {
     font-size: 1.5rem;
     text-align: center;
     background-color: #CDBE78;
-    padding: 0.3rem;
-    margin-top: 0;
+    margin: 0;
     letter-spacing: 0.6rem;
     line-height: .1rem;
+    height: 100px;
+    
     
 }
 
@@ -41,6 +37,7 @@ header {
 h1 img {
     width: 32rem;
     height: auto;
+    overflow: hidden;
     
 }
 
@@ -67,6 +64,7 @@ body {
 {
     background-color: #CDBE78;
     color: black;
+    padding: 3px;
 }
 
 .toolbar {
@@ -117,6 +115,108 @@ body img{
     width: 29rem;
     height: auto;
     transition: .5s ease;
+    overflow: hidden;
 } 
+
+.missionVision {
+    text-align: center;
+    padding: 10px;
+}
+
+.break {
+    padding: 2rem;
+}
+
+/* Image Carousel*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  max-height: 350px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 /*I think we should make images bigger if you hover over them. BLIND PEOPLE WOULD LIKE THIS.*/
