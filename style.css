@@ -6,20 +6,21 @@ secondary color: #CDBE78
 tertiary color: #F2F2F2
 */
 
-/*I like the size of the bar and the transperent logo. I made the nav bar flex, again can
-you make the gold bar small, I don't know why I can't figure that out sorry. I added structure to 
-a couple other files, added the requested mission and vision statements, added a image hover effect
-and just thre an image on the home page for refrence.
-
-I worked on the image carousel thing... still not working how I want it to. I further reduced the size of 
-the top gold bar, but there is a white bar at the top for no apparent reason. I tried to get rid of it
-but could not figure out how. */
-
 /* I fixed the issue before but now there is a little space on the side for the links. 
 I like where the carousel is going, can we get rid of the arrows and bottom bubbles and just 
 let it run? I like the top left number indicator though. Maybe we throw the  mission statement next 
 to the carousel and the vision statement at the bottom very big? Also I personally like the 
-gray background but it can of course change.*/
+gray background but it can of course change.
+
+The image carousel is probably 80%-90% done; removed the bubbles and arrows, resized some of the 
+images to better fit the container, and will add more photos to it as wanted/needed. Only a couple 
+of minor things to tweak. I spent a lot of time trying to find a way to have the mission and vision 
+statements next/inline to each other at the top, while having them centered on the left and right on 
+their respective sides. Was going to ask Cullen but he was busy with Cullen-things. We should probably 
+begin to add a lot more stuff to the other pages. Need to add all the information and then we can 
+do all the CSS jazz.
+
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
 
@@ -128,14 +129,18 @@ body img{
 } 
 
 .missionVision {
-    text-align: center;
-    padding: 10px;
+    font-size: 1.2rem;
 }
 
-.break {
-    padding: 2rem;
+.mission{
+  display: inline;
+  text-align: left;
 }
 
+.vision{
+  display: inline;
+  text-align: right;
+}
 /* Image Carousel*/
 
 * {box-sizing:border-box}
@@ -152,33 +157,6 @@ body img{
 /* Hide the images by default */
 .mySlides {
   display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
@@ -199,22 +177,6 @@ body img{
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
