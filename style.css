@@ -6,19 +6,7 @@ secondary color: #CDBE78
 tertiary color: #F2F2F2
 */
 
-/* I fixed the issue before but now there is a little space on the side for the links. 
-I like where the carousel is going, can we get rid of the arrows and bottom bubbles and just 
-let it run? I like the top left number indicator though. Maybe we throw the  mission statement next 
-to the carousel and the vision statement at the bottom very big? Also I personally like the 
-gray background but it can of course change.
-
-The image carousel is probably 80%-90% done; removed the bubbles and arrows, resized some of the 
-images to better fit the container, and will add more photos to it as wanted/needed. Only a couple 
-of minor things to tweak. I spent a lot of time trying to find a way to have the mission and vision 
-statements next/inline to each other at the top, while having them centered on the left and right on 
-their respective sides. Was going to ask Cullen but he was busy with Cullen-things. We should probably 
-begin to add a lot more stuff to the other pages. Need to add all the information and then we can 
-do all the CSS jazz.
+/* 
 
 ZR- I like them on opposite sides like how you have it but maybe move the carousel in between them? 
 I fixed the caption text on the carousel(btw good work with that pretty epic). Would we want to change
@@ -26,6 +14,8 @@ the font for the mission and vision statement(I'll paste one in). I feel like it
 -arch bar is done. Yeah that is it, if you keep adding if statements we can make the search find
 anything. Text me if you don't understand (I have study hall and first block lunch block 3B). Maybe we 
 seperate the images on the home screen and use the carousel for the products page?
+
+BB - I added a buncha "if statements", but did not do much else because I left class like an hour early. 
 */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
@@ -159,6 +149,7 @@ body img{
   position: relative;
   margin: auto;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 /* Hide the images by default */
