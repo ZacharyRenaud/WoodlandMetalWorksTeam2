@@ -18,7 +18,18 @@
         <li><a href="/WoodlandMetalWorksTeam2/products.html">Products</a></li>
         <li><a href="/WoodlandMetalWorksTeam2/countactUs.html">Contact Us</a></li>
         <li><a href="/WoodlandMetalWorksTeam2/aboutUs.html">About Us</a></li>
-        <input type="text" placeholder="Search..">
+        
+        <input type="search" value="" id="search" placeholder = "Search" onchange="searchNow()">
+        <script>
+            function searchNow(){
+                var x = document.getElementById("search").value;
+                
+                if (x === "Buy" || "buy"){
+                    window.open("/products.html");
+                }
+            }
+        </script>
+        
         </ul>
         </section>
     
@@ -28,15 +39,11 @@
     
     <section class = "missionVision">
         <section class = "mission">
-            <h2>Mission Statement:</h2>
+            <h2>ㅤMission Statement</h2>
             <h3>To become the premier high school, student operated, metal fabrication 
             business in the United States.</h3>
         </section>
-        <section class = "vision">
-            <h2>Vision Statement:</h2>
-            <h3>To supply end users custom metal fabrication products, ranging from
-            competition level axes to powder coated metal signs.</h3>
-        </section>
+
     </section>
     
     <!--Image Carousel Container-->
@@ -45,17 +52,17 @@
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="Assets/Chess Pieces (resized).jpg" style="width:100%; object-fit: fill;">
-            <div class="text">Caption Text</div>
+            <div class="text">Chess Pieces</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <img src="Assets/Full Axe.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <div class="text">Axe</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <img src="Assets/Gallery Metal Sign (resized2).jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="text">Metal Sign</div>
         </div>    
     </div>
 
@@ -79,7 +86,12 @@
         </script>
     </section>
     
-    <img src="Assets/IMG_9969.jpg"></img>
+        <section class = "vision">
+            <h2>Vision Statementㅤ</h2>
+            <h3>To supply end users custom metal fabrication products, ranging from
+            competition level axes to powder coated metal signs.</h3>
+        </section>
+        
 </body>
 </html>
 

@@ -20,9 +20,16 @@ their respective sides. Was going to ask Cullen but he was busy with Cullen-thin
 begin to add a lot more stuff to the other pages. Need to add all the information and then we can 
 do all the CSS jazz.
 
+ZR- I like them on opposite sides like how you have it but maybe move the carousel in between them? 
+I fixed the caption text on the carousel(btw good work with that pretty epic). Would we want to change
+the font for the mission and vision statement(I'll paste one in). I feel like it's just empty. The se
+-arch bar is done. Yeah that is it, if you keep adding if statements we can make the search find
+anything. Text me if you don't understand (I have study hall and first block lunch block 3B). Maybe we 
+seperate the images on the home screen and use the carousel for the products page?
 */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 html {
     font-size: 62.5%;
@@ -39,9 +46,14 @@ header {
     padding: .1rem;
 }
 
+header img{
+  width:20rem;
+  height: auto;
+  overflow:hidden;
+}
 
-h1 img {
-    width: 32rem;
+body h1 img {
+    width: 20rem;
     height: auto;
     overflow: hidden;
     
@@ -53,10 +65,12 @@ body h1 {
 
 body h2 {
     color:#383838;
+    font-family: 'Lobster', serif;
 }
 
 body h3 {
     color:#383838;
+    font-family: 'Lobster', serif;
 }
 
 body {
@@ -121,13 +135,6 @@ body img{
     height: auto;
 }
 
- body img:hover {
-    width: 29rem;
-    height: auto;
-    transition: .5s ease;
-    overflow: hidden;
-} 
-
 .missionVision {
     font-size: 1.2rem;
 }
@@ -190,4 +197,3 @@ body img{
   to {opacity: 1}
 }
 
-/*I think we should make images bigger if you hover over them. BLIND PEOPLE WOULD LIKE THIS.*/
