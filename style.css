@@ -29,7 +29,7 @@ seperate the images on the home screen and use the carousel for the products pag
 */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 html {
     font-size: 62.5%;
@@ -63,22 +63,22 @@ body h1 {
     color:#383838;
 }
 
-body h2 {
-    color:#383838;
-    font-family: 'Lobster', serif;
-}
-
-body h3 {
-    color:#383838;
-    font-family: 'Lobster', serif;
-}
-
 body {
     font-family: 'EB Garamond', serif;
     background-color: #7a7a7a;
     color: white;
     margin: 0;
-    padding-top: 0;
+    content: 2rem;
+    white-space: initial;
+}
+
+body p {
+    font-family: 'EB Garamond', serif;
+    background-color: #7a7a7a;
+    color: white;
+    margin: 0;
+    content: 2rem;
+    white-space: initial;
 }
 
 .toolbar a:hover
@@ -131,22 +131,32 @@ input {
 }
 
 body img{
-    width: 20rem;
+    width: 35rem;
     height: auto;
+}
+
+.rightA {
+    
+    align-items:center;
+    position:center;
 }
 
 .missionVision {
     font-size: 1.2rem;
+    color:#383838;
+    font-family: 'Courgette', serif;
+    text-indent: 1rem;
 }
 
 .mission{
   display: inline;
-  text-align: left;
 }
 
 .vision{
   display: inline;
   text-align: right;
+  color:#383838;
+  font-family: 'Courgette', serif;
 }
 /* Image Carousel*/
 
