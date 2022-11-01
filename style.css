@@ -16,6 +16,22 @@ anything. Text me if you don't understand (I have study hall and first block lun
 seperate the images on the home screen and use the carousel for the products page?
 
 BB - I added a buncha "if statements", but did not do much else because I left class like an hour early. 
+
+BB - Ciao ragazzi. List of stuff I did:
+- Revised the first question of the FAQ and added a couple more. 
+- I added the names of the people in each part of WMW. Not sure if we are gonna keep it tho because
+it would mean someone would have to manually change the names whenever new people are in the company
+at the end of the school year/semester.
+- Finally figured out how to align the mission and vision statements next to each other on the home page.
+- Renamed the tab titles.
+
+I feel like the background color is a little too dark. It makes the site seem dark. Yes, it is a metal 
+company, so grey does make sense; but maybe if we could use a lighter grey it'd be better. Next to the 
+"The Woodland Metal Works Members Team" on the "AboutUs" page, I think it would be good to add how the 
+company started, how all products and (most) material are made/from in America, and the uniqueness of 
+the whole business model WMW has. I think it would also be good to include a snippet about Precision Axes
+(WMW's parent company) and something quick about the roles Mr. Murdy, Mr. Magas, and Mr. Cullen have
+in the business (yea? nay?). Arrivederci bambini.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
@@ -132,22 +148,18 @@ body img{
 }
 
 .missionVision {
+    float: left;
     font-size: 1.2rem;
     color:#383838;
     font-family: 'Courgette', serif;
-    text-indent: 1rem;
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    
 }
 
-.mission{
-  display: inline;
-}
-
-.vision{
-  display: inline;
-  text-align: right;
-  color:#383838;
-  font-family: 'Courgette', serif;
-}
 /* Image Carousel*/
 
 * {box-sizing:border-box}
@@ -196,5 +208,25 @@ body img{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.teamMembers{
+    float: left;
+    font-size: 1.25rem;
+    padding: 10px;
+    width: 25%;
+    height: 450px;
+}
+
+.teamParts {
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+}
+
+.titleTeam {
+    text-align: center;
 }
 
