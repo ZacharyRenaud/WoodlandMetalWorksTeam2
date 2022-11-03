@@ -32,10 +32,16 @@ company started, how all products and (most) material are made/from in America, 
 the whole business model WMW has. I think it would also be good to include a snippet about Precision Axes
 (WMW's parent company) and something quick about the roles Mr. Murdy, Mr. Magas, and Mr. Cullen have
 in the business (yea? nay?). Arrivederci bambini.
+
+Brandon I like everything you said above ^. There was more team member so I added them. Maybe include
+the teachers in the faq? Also I personally really like our about us page. Maybe highlight the tl's
+in a special color? Would you mind trying to fix the taskbar for good? Just so we can move onto 
+filling this website up and styling it.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 
 html {
     font-size: 62.5%;
@@ -49,7 +55,7 @@ header {
     letter-spacing: 0.6rem;
     line-height: .01rem;
     height: 135px;
-    padding: .1rem;
+    padding: .1rem; 
 }
 
 header img{
@@ -71,16 +77,16 @@ body h1 {
 
 body {
     font-family: 'EB Garamond', serif;
-    background-color: #7a7a7a;
+    background-color: #a6a2a2;
     color: white;
     margin: 0;
     content: 2rem;
     white-space: initial;
+    
 }
 
 body p {
-    font-family: 'EB Garamond', serif;
-    background-color: #7a7a7a;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     margin: 0;
     content: 2rem;
@@ -105,6 +111,7 @@ body p {
 
 .toolbar a:active {
     background-color: #CDBE78;
+    width:100%;
     color: white;
 } 
 
@@ -211,13 +218,26 @@ body img{
 }
 
 .teamMembers{
-    float: left;
-    font-size: 1.25rem;
-    padding: 10px;
-    width: 25%;
-    height: 450px;
+    text-align: center; 
+    font-size: 2.2rem;
+    padding: 0.625rem;
+    margin-top: 10rem;
+    width: 100%; 
+    height: 28.125rem; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
+.teamMembers h1{
+    font-family: 'Courgette', serif; 
+}
+
+.teamMembers h2{
+    font-family: 'Open Sans', sans-serif; 
+}
 .teamParts {
     text-align: center;
 }
@@ -230,3 +250,17 @@ body img{
     text-align: center;
 }
 
+.contact {
+    text-align: center; 
+    font-size: 2.2rem;
+    padding: 0.625rem;
+    margin-top: 15rem;
+    width: 100%; 
+    height: 28.125rem; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+}
