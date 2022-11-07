@@ -47,6 +47,11 @@ I'll try to figure out how to animate them next time. Let me know where in the p
 
 Zr- 
 
+BB- there is a chat button on the right below the gear just as an FYI
+I am thinking the Paralax doesn't work because there isn't enough scrolling to actually use it. Did an immense amnt
+of troubleshooting for the image carousels, I am halfway to figuring out how to animate them both. Been using 
+YouTube and all that but still not a major amount of luck. If all else fails we may have to settle for a single
+image carousel.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
@@ -309,3 +314,5 @@ img {vertical-align: middle;}
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- IGNORE THIS -->
+<html>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script class = "slides1">
+    var i = 0; 			// Start Point
+    var images = [];	// Images Array
+    var time = 3000;	// Time Between Switch
+    	 
+    // Image List
+    images[0] = "Assets/Chess Pieces (resized).jpg";
+    images[1] = "Assets/Full Axe.jpg";
+    images[2] = "Assets/Gallery Metal Sign (resized2).jpg";
+    images[3] = "Assets/IMG_9967.jpg";
+    
+    // Change Image
+    function changeImg()
+    {
+        document.slide1.src = images[i];
+    
+    	// Check If Index Is Under Max
+    	if(i < images.length - 1)
+    	{
+    	  // Add 1 to Index
+    	  i++; 
+    	} 
+    	else 
+    	{ 
+    		// Reset Back To O
+    		i = 0;
+    	}
+    
+    	// Run function every x seconds
+    	setTimeout("changeImg()", time);
+    }
+    
+    // Run function when page loads
+    window.onload=changeImg;
+</script>
+
+
+<script class = "slides2">
+    var a = 0; 			// Start Point
+    var imagesB = [];	// Images Array
+    var timeB = 3000;	// Time Between Switch
+    	 
+    // Image List
+    imagesB[0] = "Assets/Chess Pieces (resized).jpg";
+    imagesB[1] = "Assets/Full Axe.jpg";
+    imagesB[2] = "Assets/Gallery Metal Sign (resized2).jpg";
+    imagesB[3] = "Assets/IMG_9966.jpg";
+    
+    // Change Image
+    function changeImgB()
+    {
+        document.slide2.src = imagesB[a];
+    
+    	// Check If Index Is Under Max
+    	if(a < imagesB.length - 1)
+    	{
+    	    // Add 1 to Index
+    	    a++; 
+    	} 
+    	else 
+    	{ 
+    		// Reset Back To O
+    		a = 0;
+    	}
+    
+    	// Run function every x seconds
+    	setTimeout("changeImgB()", timeB);
+    }
+    
+    // Run function when page loads
+    window.onload=changeImgB;
+    </script>
+    
+    <img name="slide1" width="400" height="200" />
+    <img name="slide2" width="400" height="200" />
+    
+</html>
+
