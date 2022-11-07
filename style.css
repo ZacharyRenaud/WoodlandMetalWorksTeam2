@@ -44,6 +44,9 @@ BB -
 - Painfully added two slideshows to the products page. However, I have zero clue how to get them to automatically
 change pictures. The pictures I put in them are just placeholders to make sure the containers actually show up. 
 I'll try to figure out how to animate them next time. Let me know where in the page you want them to be.
+
+Zr- 
+
 */
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300&display=swap');
@@ -158,25 +161,37 @@ input {
 body img{
     width: 35rem;
     height: auto;
+    
 }
 
-.rightA {
-    
-    align-items:center;
-    position:center;
+.rightA{
+    float:right;
+    text-align: right;
+    font-size: 3.6rem;
+    color:#383838;
+    font-family: 'Courgette', serif;
+    height: 20px;
+    padding: 10px;
+    color: white;
+    max-width: 35%;
 }
 
 .missionVision {
     float: left;
-    font-size: 1.2rem;
+    text-align: left;
+    font-size: 3.6rem;
     color:#383838;
     font-family: 'Courgette', serif;
-    width: 50%;
     height: 20px;
-    text-align: center;
     padding: 10px;
     color: white;
-    
+    max-width: 35%;
+}
+
+.alignment{
+    float: right;
+    align-items:flex-end;
+    padding-right: 5rem;
 }
 
 /* Image Carousel*/
@@ -280,4 +295,17 @@ img {vertical-align: middle;}
     text-align: center;
     color: #CDBE78;
     font-weight: bold;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("Assets/IMG_9968.jpg");
+
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
