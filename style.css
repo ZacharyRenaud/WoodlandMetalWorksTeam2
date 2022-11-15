@@ -108,6 +108,22 @@ body p {
     white-space: initial;
 }
 
+h1 {
+    text-align: center;
+}
+
+.h2proddesc {
+    text-align: center;
+    margin: 10px;
+}
+
+.h2prodimg {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
 .toolbar a:hover
 {
     background-color: #CDBE78;
@@ -201,8 +217,9 @@ body img{
 
 /* Image Carousel*/
 
-* {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */

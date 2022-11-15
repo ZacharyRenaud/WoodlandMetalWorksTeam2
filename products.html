@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Woodland Metal Works</title>
+    <title>WMW Products</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -49,9 +49,7 @@
     
     <body>
         
-        <h2>ㅤㅤ</h2>
-        <h1>Throwing Axe</h1>
-        <h2>ㅤㅤ</h2>
+        <h1>Our Products: </h1>
         
         <div class="slideshow-container">
             <div class="mySlides1">
@@ -63,56 +61,47 @@
             </div>
             
             <div class="mySlides1">
-                <img src="" style="width:100%">
+                <img src="Assets/Gallery Metal Sign (resized2).jpg" style="width:100%">
             </div>
         </div>
         
-        <div class="slideshow-container">
-            <div class="mySlides2">
-              <img src="Assets/Chess Pieces (resized).jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides2">
-                <img src="Assets/Full Axe.jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides2">
-                <img src="" style="width:100%">
-            </div>
-        </div>
         
         <script>
-        let slideIndex = [1,1];
-        /* Class the members of each slideshow group with different CSS classes */
-        let slideId = ["mySlides1", "mySlides2"]
-        showSlides(1, 0);
-        showSlides(1, 1);
+        let slideIndex = 0;
+        showSlides();
         
-        function plusSlides(n, no) {
-            showSlides(slideIndex[no] += n, no);
-        }
-        
-        function showSlides(n, no) {
+        function showSlides() {
             let i;
-            let x = document.getElementsByClassName(slideId[no]);
-            if (n > x.length) {slideIndex[no] = 1}
-            if (n < 1) {slideIndex[no] = x.length}
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+            let slides = document.getElementsByClassName("mySlides1");
+            for (i = 0; i < slides.length; i++) 
+            {
+                slides[i].style.display = "none";
             }
-            x[slideIndex[no]-1].style.display = "block";
-            
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
         </script>
-    
-        <h2>ㅤㅤ</h2>
+        
+        <h1>Throwing/Competition Axes</h1>
+        <h2 class = "h2proddesc">Our unique axes are specifically designed for axe throwing and competitions. 
+        Choose what best suits your needs.</h2>
+        <h2 class = "h2proddesc">Our selection:</h2>
+        <h2></h2> <!-- Add the various choices here -->
         
         <h1>Metal Sign</h1>
+        <h2 class = "h2proddesc">You can choose a metal sign of your choice to be custom made to your liking. Optional
+        powder coating his available if you want to add a splash of color.</h2>
+        <h2 class = "h2proddesc">Below is an example:</h2>
+        <h2 class = "h2prodimg"><img src="Assets/Gallery Metal Sign (resized2).jpg"></img></h2>
+        <h2></h2> <!-- Cost goes here -->
         
-        <h2>ㅤㅤ</h2>
-        
-        <h2>ㅤㅤ</h2>        
-        
-        <h1>Chess Piece</h1>
+        <h1>Chess Pieces</h1>
+        <h2 class = "h2proddesc">We have designed one-of-a-kind custom chess pieces for avid players 
+        or for display.</h2>
+        <h2 class = "h2proddesc">Below is an example:</h2>
+        <h2 class = "h2prodimg"><img src="Assets/Chess Pieces (resized).jpg"></img></h2>
+        <h2></h2> <!-- Cost goes here -->
         
     </body>
