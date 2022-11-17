@@ -180,7 +180,7 @@ input {
 }
 
 body img{
-    width: 35rem;
+    width: 40rem;
     height: auto;
     
 }
@@ -191,28 +191,35 @@ body img{
     font-size: 3.6rem;
     color:#383838;
     font-family: 'Courgette', serif;
-    height: 20px;
-    padding: 10px;
+    height: 1.25rem;
+    padding-right: 4rem;
     color: white;
-    max-width: 35%;
+    max-width: 40%; 
+    
+    
 }
 
 .missionVision {
     float: left;
     text-align: left;
     font-size: 3.6rem;
-    color:#383838;
     font-family: 'Courgette', serif;
-    height: 20px;
-    padding: 10px;
-    color: white;
-    max-width: 35%;
+    height: 1.25rem;
+    padding-left: 3.6rem;
+    padding-top: 3rem;
+    color: white; 
+    max-width: 40%; 
+    
 }
 
 .alignment{
     float: right;
-    align-items:flex-end;
-    padding-right: 5rem;
+    padding-right: 5rem; 
+    
+    height: auto;
+    padding-top: 5rem;
+    
+    
 }
 
 /* Image Carousel*/

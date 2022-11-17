@@ -19,26 +19,30 @@
         <li><a href="/WoodlandMetalWorksTeam2/countactUs.html">Contact Us</a></li>
         <li><a href="/WoodlandMetalWorksTeam2/aboutUs.html">About Us</a></li>
         <input type="search" value="" id="search" placeholder = "Search" onchange="searchNow()">
+        
         <script>
-            function searchNow(){
-                var x = document.getElementById("search").value;
-                
-                if (x === "Buy" || "buy" || "axe" || "Axe" || "Axes" || "axes"|| "Chess"|| "chess" || 
-                "Chess peices" || "chess pieces" || "chess Pieces" || "Chess Pieces" || "Competition axes" ||
-                "competition Axes" || "Competition Axes" || "Competition axe" || "Competition Axe" || 
-                "compeition Axe" || "Metal" || "metal" || "metal sign" || "Metal sign" || "metal Sign" ||
-                "Metal Sign")
-                    window.open("/products.html");
-                }
-                
+            
             function searchNow(){
                 var x = document.getElementById("search").value;
                 
                 if (x === "number" || "Number" || "phone number" || "Phone number" || "phone Number" || 
                 "Phone Number" || "email" || "email address" || "Email" || "call" || "Call" || "contact" 
-                || "Contact" || "Email address" || "Eamil Address" || "email Address")
-                    window.open("/contactUs.html");
+                || "Contact" || "Email address" || "Eamil Address" || "email Address"){
+                    window.open("https://zacharyrenaud.github.io/WoodlandMetalWorksTeam2/countactUs.html");
+                    return;
                 }
+                
+                if(x === "Buy" || "buy" || "axe" || "Axe" || "Axes" || "axes"|| "Chess"|| "chess" || 
+                "Chess peices" || "chess pieces" || "chess Pieces" || "Chess Pieces" || "Competition axes" ||
+                "competition Axes" || "Competition Axes" || "Competition axe" || "Competition Axe" || 
+                "compeition Axe" || "Metal" || "metal" || "metal sign" || "Metal sign" || "metal Sign" ||
+                "Metal Sign"){
+                    window.open("https://zacharyrenaud.github.io/WoodlandMetalWorksTeam2/products.html");
+                    return;
+                } 
+               
+                
+            }
                 
                 
             </script>
