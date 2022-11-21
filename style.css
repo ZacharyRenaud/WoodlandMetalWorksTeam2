@@ -330,7 +330,7 @@ img {vertical-align: middle;}
 
 .parallax {
   /* The image used */
-  background-image: url("Assets/IMG_9968.jpg");
+  background-image: url("Assets/Axe Head.jpg");
 
   min-height: 500px; 
 
@@ -346,3 +346,7 @@ img {vertical-align: middle;}
     padding-top: 2rem;
     text-align: center; 
 } 
+
+ img {
+    border-radius: 10px;
+}
