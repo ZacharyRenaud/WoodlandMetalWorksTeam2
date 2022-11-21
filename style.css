@@ -114,7 +114,9 @@ h1 {
 
 .h2proddesc {
     text-align: center;
+    align-items: center;
     margin: 10px;
+    
 }
 
 .h2prodimg {
@@ -206,7 +208,7 @@ body img{
     font-family: 'Courgette', serif;
     height: 1.25rem;
     padding-left: 3.6rem;
-    padding-top: 3rem;
+    padding-top: 4.5rem;
     color: white; 
     max-width: 40%; 
     
@@ -340,3 +342,7 @@ img {vertical-align: middle;}
 }
 
 
+.faqCss {
+    padding-top: 2rem;
+    text-align: center; 
+} 
