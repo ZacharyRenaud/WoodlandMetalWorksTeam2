@@ -194,7 +194,7 @@ body img{
     color:#383838;
     font-family: 'Courgette', serif;
     height: 1.25rem;
-    padding-right: 4rem;
+    padding-right: 7rem;
     color: white;
     max-width: 40%; 
     
@@ -207,8 +207,9 @@ body img{
     font-size: 3.6rem;
     font-family: 'Courgette', serif;
     height: 1.25rem;
-    padding-left: 3.6rem;
+    padding-left: 7rem;
     padding-top: 4.5rem;
+    padding-bottom: 2rem;
     color: white; 
     max-width: 40%; 
     
@@ -216,11 +217,10 @@ body img{
 
 .alignment{
     float: right;
-    padding-right: 5rem; 
-    
+    padding-right: 9rem; 
     height: auto;
     padding-top: 5rem;
-    
+    padding-bottom: 4rem;
     
 }
 
@@ -345,7 +345,20 @@ img {vertical-align: middle;}
 .faqCss {
     padding-top: 2rem;
     text-align: center; 
+    align-items: center;
+    padding-right: 10rem;
+    padding-left: 10rem;
 } 
+
+.faqCss h1 {
+    font-family: 'Courgette', serif; 
+    font-size: 32px;
+}
+
+.faqCss p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
 
  img {
     border-radius: 10px;
