@@ -106,6 +106,7 @@ body p {
     margin: 0;
     content: 2rem;
     white-space: initial;
+    
 }
 
 h1 {
@@ -367,5 +368,7 @@ img {
 .down{
    bottom: 0;
    width:100%;
- 
+   margin-top: auto;
+   height: 40px;
 }
+
