@@ -65,7 +65,7 @@ html {
 }
 
 header {
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     text-align: center;
     background-color: #CDBE78;
     margin: 0px;
@@ -141,7 +141,7 @@ h1 {
 }
 
 .toolbar {
-    font-size: 1.5rem;
+    font-size: 1.1vw;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
@@ -219,6 +219,7 @@ body img{
     color: white; 
     max-width: 40%; 
     
+    
 }
 
 .alignment{
@@ -227,6 +228,7 @@ body img{
     height: auto;
     padding-top: 5rem;
     padding-bottom: 4rem;
+    
     
 }
 
@@ -373,7 +375,7 @@ img {
 .down{
    bottom: 0;
    width:100%;
-   margin-top: auto;
+   margin-top: 20px;
    height: 40px;
 }
 
@@ -382,6 +384,21 @@ img {
     flex-direction: column;
     flex: 100%;
   }
+  
+}
+
+.mainpage{
+    font-family: 'Courgette', serif;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  position: relative;
   
 }
 
