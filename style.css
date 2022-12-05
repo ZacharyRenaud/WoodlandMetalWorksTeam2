@@ -60,6 +60,8 @@ image carousel.
 
 html {
     font-size: 62.5%;
+    
+
 }
 
 header {
@@ -97,6 +99,9 @@ body {
     margin: 0;
     content: 2rem;
     white-space: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     
 }
 
@@ -371,4 +376,13 @@ img {
    margin-top: auto;
    height: 40px;
 }
+
+@media (max-width:800px) {
+  body {
+    flex-direction: column;
+    flex: 100%;
+  }
+  
+}
+
 
